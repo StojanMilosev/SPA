@@ -209,7 +209,48 @@
       <div class="sec" id="contact">
         <div class="container container-fluid">
           <h1 class="text-center">Contact</h1><br>
-          <p>contact form here</p>
+          <div class="col-md-6">
+            <p>Kontakt telefon: 
+              <h3>064/6809404</h3>
+            </p>
+            <p>email: 
+              <h3>milosev.stojan@gmail.com</h3>
+            </p>
+          </div>
+          <form class="form-horizontal col-md-6" role="form" method="post" action="index.php">
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="name">Name</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="name" type="text" name="name" placeholder="First &amp; Last Name" value="name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="email">Email</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="email" type="email" name="email" placeholder="example@domain.com" value="email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="subject">Subject</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="email" type="subject" name="subject" placeholder="subject" value="subject">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="message">Message</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="4" name="message"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-10 col-sm-offset-2">
+                <input class="btn btn-primary" id="submit" name="submit" type="submit" value="Send">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-10 col-sm-offset-2"></div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
