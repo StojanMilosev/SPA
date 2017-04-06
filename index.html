@@ -5,99 +5,84 @@
     <meta charset="utf-8" http-equiv="encoding">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.less">
     <link rel="stylesheet" type="text/css" href="css/spa.min.css">
   </head>
   <body>
-    <nav class="navbar navbar-deafult navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#meni" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          <button class="navbar-toggle collapsed" id="menu-button" type="button" data-toggle="collapse" data-target="#meni" aria-expanded="false">
+            <p>MENU</p>
+          </button>
         </div>
       </div>
       <div class="container collapse navbar-collapse" id="meni">
         <ul class="nav navbar-nav">
-          <li class="link"><a href="#carousel">Home</a></li>
+          <li class="link"><a href="#spa">Home</a></li>
           <li class="link"><a href="#bootstrap">Bootstrap</a></li>
           <li class="link"><a href="#jquery">Jquery</a></li>
-          <li class="link"><a href="#php">PHP</a></li>
+          <li class="link"><a href="#node">Node.js</a></li>
           <li class="link"><a href="#contact">Contact                     </a></li>
         </ul>
       </div>
     </nav>
-    <div class="carousel slide" id="carousel" data-ride="carousel" data-interval="5000" pause="null">
-      <!-- Indicators-->
-      <ol class="carousel-indicators">
-        <li class="active" data-target="#carousel" data-slide-to="0"></li>
-        <li data-target="#carousel" data-slide-to="1"></li>
-        <li data-target="#carousel" data-slide-to="2"></li>
-        <li data-target="#carousel" data-slide-to="3"></li>
-      </ol>
-      <!-- Wrapper for slides-->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active" id="main-cr">
-          <container>
-            <div class="carousel-caption">
-              <h1 class="col-md-4">Single page application</h1><br>
-              <p class="col-md-8"> 
-                A single-page application (SPA) is a web application or web site that 
-                fits on a single web page with the goal of providing a user experience 
-                similar to that of a desktop application. In an SPA, either all necessary 
-                code – HTML, JavaScript, and CSS – is retrieved with a single page load,[1] 
-                or the appropriate resources are dynamically loaded and added to the page as 
-                necessary, usually in response to user actions. The page does not reload at 
-                any point in the process, nor does control transfer to another page, although 
-                the location hash or the HTML5 History API can be used to provide the perception 
-                and navigability of separate logical pages in the application.[2] Interaction with 
-                the single page application often involves dynamic communication with the web 
-                server behind the scenes.
-              </p>
+    <div class="row">
+      <div class="sec" id="spa">
+        <div class="container container-fluid">
+          <h1 class="text-center">Single Page Application</h1><br>
+          <p>
+            A single-page application (SPA) is a web application or web site that 
+            fits on a single web page with the goal of providing a user experience 
+            similar to that of a desktop application. In an SPA, either all necessary 
+            code – HTML, JavaScript, and CSS – is retrieved with a single page load,[1] 
+            or the appropriate resources are dynamically loaded and added to the page as 
+            necessary, usually in response to user actions. The page does not reload at 
+            any point in the process, nor does control transfer to another page, although 
+            the location hash or the HTML5 History API can be used to provide the perception 
+            and navigability of separate logical pages in the application.[2] Interaction with 
+            the single page application often involves dynamic communication with the web 
+            server behind the scenes.
+          </p><br>
+          <div class="spa">
+            <div class="col-md-4 more-less-container">
+              <div class="less-content">
+                <div class="less-head"><a href="#bootstrap">
+                    <h2>Bootstrap</h2></a></div><br>
+                <p class="less">
+                  Bootstrap is a free and open-source front-end web framework for 
+                  designing websites and web applications.
+                </p>
+              </div>
             </div>
-          </container>
+            <div class="col-md-4 more-less-container">
+              <div class="less-content">
+                <div class="less-head"><a href="#jquery">
+                    <h2>jQuery</h2></a></div>
+                <p class="less">
+                  jQuery is a cross-platform JavaScript library designed to 
+                  simplify the client-side scripting of HTML.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 more-less-container">
+              <div class="less-content">
+                <div class="less-head"><a href="#node">
+                    <h2>Node.js</h2></a></div>
+                <p class="less">
+                  Node.js is an open-source, cross-platform JavaScript runtime environment for developing 
+                  a diverse variety of server tools and applications.
+                </p>
+              </div>
+            </div>
+          </div><br>
         </div>
-        <div class="item" id="bootstrap-cr">
-          <div class="carousel-caption">
-            <h1 class="col-md-4"> <a href="#bootstrap">Bootstrap</a></h1>
-            <p class="col-md-8">
-              Bootstrap is a free and open-source front-end web framework for 
-              designing websites and web applications. It contains HTML- and 
-              CSS-based design templates for typography, forms, buttons, navigation 
-              and other interface components, as well as optional JavaScript extensions. 
-              Unlike many web frameworks, it concerns itself with front-end development only.
-            </p>
-          </div>
-        </div>
-        <div class="item" id="jquery-cr">
-          <div class="carousel-caption">
-            <h1 class="col-md-4"> <a href="#jquery">Jquery</a></h1>
-            <p class="col-md-8"> 
-              jQuery is a fast, small, and feature-rich JavaScript library. 
-              It makes things like HTML document traversal and manipulation, 
-              event handling, animation, and Ajax much simpler with an easy-to-use 
-              API that works across a multitude of browsers. With a combination of 
-              versatility and extensibility, jQuery has changed the way that millions 
-              of people write JavaScript.
-            </p>
-          </div>
-        </div>
-        <div class="item" id="php-cr">
-          <div class="carousel-caption">
-            <h1 class="col-md-4"> <a href="#jquery">Jquery</a></h1>
-            <p class="col-md-8"> 
-              PHP is a server-side scripting language designed primarily 
-              for web development but also used as a general-purpose programming 
-              language. Originally created by Rasmus Lerdorf in 1994, the PHP 
-              reference implementation is now produced by The PHP Development 
-              Team. PHP originally stood for Personal Home Page, but it now 
-              stands for the recursive acronym PHP: Hypertext Preprocessor.
-            </p>
-          </div>
-        </div>
-      </div><a class="left carousel-control" href="#carousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a><a class="right carousel-control" href="#carousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+      </div>
     </div>
     <div class="row">
       <div class="sec" id="bootstrap">
-        <div class="container caontainer-fluid">
-          <h1 class="text-center"><a class="head-link" href="http://getbootstrap.com/">Bootstrap</a></h1><br>
+        <div class="container container-fluid">
+          <h1 class="text-center"><a class="head-link" href="http://getbootstrap.com/" target="_blank">Bootstrap</a></h1><br>
           <p>
             Bootstrap is a free and open-source front-end web framework for 
             designing websites and web applications. It contains HTML- and 
@@ -121,26 +106,117 @@
             be maintained by Mark Otto, Jacob Thornton, and a small group of core developers, 
             as well as a large community of contributors.
           </p>
-          <p>
-            On January 31, 2012, Bootstrap 2 was released, which added a twelve-column responsive 
-            grid layout system, inbuilt support for Glyphicons, several new components, as well as 
-            changes to many of the existing components.
-          </p>
-          <p>
-            On August 19, 2013, Bootstrap 3 was released, which redesigned components to 
-            use flat design, and a mobile first approach.
-          </p>
-          <p>
-            On October 29, 2014, Mark Otto announced that Bootstrap 4 was in development.
-            The first alpha version of Bootstrap 4 was released on August 19, 2015.
-          </p>
+          <div class="btsr">
+            <div class="col-md-4 more-less-container" id="csr">
+              <div class="less-content">
+                <div class="less-head">
+                  <h2>carousel</h2>
+                </div>
+                <p class="less">
+                  The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms 
+                  and a bit of JavaScript. It works with a series of images, text, or custom markup. It also includes 
+                  support for previous/next controls and indicators.
+                </p>
+                <button class="more-btn" id="carousel-more-btn" type="button">More...</button>
+              </div>
+              <div class="more-content">
+                <div class="col-md-3 more less-head">
+                  <h2>carousel</h2>
+                </div>
+                <div class="more col-md-9">
+                  <p>
+                    In browsers where the Page Visibility API is supported, the carousel will avoid sliding when the 
+                    webpage is not visible to the user (such as when the browser tab is inactive, the browser window is 
+                    minimized, etc.).Please be aware that nested carousels are not supported, and carousels are 
+                    generally not compliant with accessibility standards.
+                  </p>
+                  <p>
+                    Carousels don’t automatically normalize slide dimensions. As such, you may need to use additional 
+                    utilities or custom styles to appropriately size content. While carousels support previous/next controls 
+                    and indicators, they’re not explicitly required. Add and customize as you see fit. Be sure to set a unique 
+                    id on the .carousel for optional controls, especially if you’re using multiple carousels on a single page.
+                  </p>
+                </div>
+                <button class="more-btn" id="carousel-less-btn" type="button">Back...</button>
+              </div>
+            </div>
+            <div class="col-md-4 more-less-container" id="nsr">
+              <div class="less-content">
+                <div class="less-head">
+                  <h2>navbar</h2>
+                </div>
+                <p class="less">
+                  The navbar is a wrapper that positions branding, navigation, and other elements in a concise header.
+                  It’s easily extensible and, thanks to our Collapse plugin, can easily integrate responsive behaviors. 
+                </p>
+                <button class="more-btn" id="navbar-more-btn" type="button">More...</button>
+              </div>
+              <div class="more-content">
+                <div class="col-md-3 more less-head">
+                  <h2>navbar</h2>
+                </div>
+                <div class="more col-md-9">
+                  <h2>How it works</h2>
+                  <p>Here’s what you need to know before getting started with the navbar:</p>
+                  <ul>
+                    <li>Navbars require a wrapping .navbar with .navbar-toggleable-* for responsive collapsing and color scheme classes.</li>
+                    <li>Navbars and their contents are fluid by default. Use optional containers to limit their horizontal width.</li>
+                    <li>Navbars and their contents are built with flexbox, providing easy alignment options via utility classes.</li>
+                    <li>Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.</li>
+                    <li> 
+                      Ensure accessibility by using a <nav> element or, if using a more generic element such as a <div>, add a role="navigation" to every navbar to explicitly 
+                      identify it as a landmark region for users of assistive technologies.
+                    </li>
+                  </ul>
+                </div>
+                <button class="more-btn" id="navbar-less-btn" type="button">Back...</button>
+              </div>
+            </div>
+            <div class="col-md-4 more-less-container" id="gsr">
+              <div class="less-content">
+                <div class="less-head">
+                  <h2>grid</h2>
+                </div>
+                <p class="less">
+                  Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 
+                  columns as the device or viewport size increases. It includes predefined classes for easy layout 
+                  options, as well as powerful mixins for generating more semantic layouts.
+                </p>
+                <button class="more-btn" id="grid-more-btn" type="button">More...</button>
+              </div>
+              <div class="more-content">
+                <div class="col-md-3 more less-head">
+                  <h2>Grid</h2>
+                </div>
+                <div class="more col-md-9">
+                  <p> 
+                    Bootstrap makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. 
+                    Include it at the beginning of all your projects.
+                  </p>
+                  <p>
+                    With Bootstrap 2, we added optional mobile friendly styles for key aspects of the framework. With Bootstrap 3, 
+                    we've rewritten the project to be mobile friendly from the start. Instead of adding on optional mobile styles, 
+                    they're baked right into the core. In fact, Bootstrap is mobile first. Mobile first styles can be found 
+                    throughout the entire library instead of in separate files.To ensure proper rendering and touch zooming, 
+                    add the viewport meta tag to your <head>.
+                  </p>
+                  <p>
+                    You can disable zooming capabilities on mobile devices by adding user-scalable=no to the viewport meta tag. 
+                    This disables zooming, meaning users are only able to scroll, and results in your site feeling a bit more 
+                    like a native application. Overall, we don't recommend this on every site, so use caution!
+                  </p>
+                </div>
+                <button class="more-btn" id="grid-less-btn" type="button">Back...</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="sec" id="jquery">
-        <div class="container coanteiner-fluid">
-          <h1 class="text-center"><a class="head-link" href="https://code.jquery.com/"> Jquery</a></h1><br>
+        <div class="container container-fluid">
+          <h1 class="text-center"><a class="head-link" href="https://code.jquery.com/" target="_blank"> Jquery</a></h1><br>
           <p>
             jQuery is a cross-platform JavaScript library designed to 
             simplify the client-side scripting of HTML.
@@ -169,38 +245,27 @@
       </div>
     </div>
     <div class="row">
-      <div class="sec" id="php">
+      <div class="sec" id="node">
         <div class="container container-fluid">
-          <h1 class="text-center"><a class="head-link" href="http://php.net/"> PHP</a></h1><br>
+          <h1 class="text-center"><a class="head-link" href="https://nodejs.org/en/" target="_blank"> Node.js</a></h1><br>
           <p>
-            PHP is a server-side scripting language designed primarily 
-            for web development but also used as a general-purpose programming 
-            language. Originally created by Rasmus Lerdorf in 1994, the PHP 
-            reference implementation is now produced by The PHP Development 
-            Team. PHP originally stood for Personal Home Page, but it now 
-            stands for the recursive acronym PHP: Hypertext Preprocessor.
+            Node.js is an open-source, cross-platform JavaScript runtime environment for developing 
+            a diverse variety of server tools and applications. Although Node.js is not a JavaScript 
+            framework, many of its basic modules are written in JavaScript, and developers can write 
+            new modules in JavaScript. The runtime environment interprets JavaScript using Google's V8 JavaScript engine.
           </p>
           <p>
-            PHP code may be embedded into HTML or HTML5 code, or it can be 
-            used in combination with various web template systems, web content 
-            management systems and web frameworks. PHP code is usually processed 
-            by a PHP interpreter implemented as a module in the web server or as 
-            a Common Gateway Interface (CGI) executable. The web server combines 
-            the results of the interpreted and executed PHP code, which may be 
-            any type of data, including images, with the generated web page. PHP 
-            code may also be executed with a command-line interface (CLI) and can 
-            be used to implement standalone graphical applications.
+            Node.js has an event-driven architecture capable of asynchronous I/O. These design choices 
+            aim to optimize throughput and scalability in Web applications with many input/output operations, 
+            as well as for real-time Web applications (e.g., real-time communication programs and browser games).
           </p>
           <p>
-            The standard PHP interpreter, powered by the Zend Engine, is free 
-            software released under the PHP License. PHP has been widely ported
-            and can be deployed on most web servers on almost every operating 
-            system and platform, free of charge.
+            The Node.js distributed development project, governed by the Node.js Foundation, is facilitated 
+            by the Linux Foundation's Collaborative Projects program.
           </p>
           <p>
-            The PHP language evolved without a written formal specification or 
-            standard until 2014, leaving the canonical PHP interpreter as a de
-            facto standard. Since 2014 work has gone on to create a formal PHP specification.
+            Corporate users of Node.js software include GoDaddy, Groupon, IBM, LinkedIn, Microsoft,
+            Netflix, PayPal, Rakuten, SAP, Voxer, Walmart, Yahoo!, and Cisco Systems.
           </p>
         </div>
       </div>
@@ -255,9 +320,10 @@
       </div>
     </div>
     <footer></footer>
-    <!--custom javascipt-->
-    <script type="text/javascript" src="js/_bower.js"></script>
-    <script type="text/javascript" src="js/bower.min.js"></script>
+    <!--custom javascipt a-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/spa.min.js"></script>
   </body>
 </html>
