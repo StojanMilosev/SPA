@@ -5,7 +5,7 @@
     <meta charset="utf-8" http-equiv="encoding">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.less">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/spa.min.css">
   </head>
   <body>
@@ -29,18 +29,18 @@
     </nav>
     <div class="row">
       <div class="sec" id="spa">
-        <div class="container container-fluid">
+        <div class="container container-fluid"><br>
           <h1 class="text-center">Single Page Application</h1><br>
           <p>
             A single-page application (SPA) is a web application or web site that 
             fits on a single web page with the goal of providing a user experience 
             similar to that of a desktop application. In an SPA, either all necessary 
-            code – HTML, JavaScript, and CSS – is retrieved with a single page load,[1] 
+            code – HTML, JavaScript, and CSS – is retrieved with a single page load, 
             or the appropriate resources are dynamically loaded and added to the page as 
             necessary, usually in response to user actions. The page does not reload at 
             any point in the process, nor does control transfer to another page, although 
             the location hash or the HTML5 History API can be used to provide the perception 
-            and navigability of separate logical pages in the application.[2] Interaction with 
+            and navigability of separate logical pages in the application. Interaction with 
             the single page application often involves dynamic communication with the web 
             server behind the scenes.
           </p><br>
@@ -48,7 +48,7 @@
             <div class="col-md-4 more-less-container">
               <div class="less-content">
                 <div class="less-head"><a href="#bootstrap">
-                    <h2>Bootstrap</h2></a></div><br>
+                    <h2>Bootstrap</h2></a></div>
                 <p class="less">
                   Bootstrap is a free and open-source front-end web framework for 
                   designing websites and web applications.
@@ -89,12 +89,8 @@
             CSS-based design templates for typography, forms, buttons, navigation 
             and other interface components, as well as optional JavaScript extensions. 
             Unlike many web frameworks, it concerns itself with front-end development only.
-          </p>
-          <p>
             Bootstrap is the second most-starred project on GitHub, with more than 
             107,000 stars and 48,000 forks.
-          </p>
-          <p>
             Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and 
             Jacob Thornton at Twitter as a framework to encourage consistency across internal 
             tools. Before Bootstrap, various libraries were used for interface development, which 
@@ -106,7 +102,8 @@
             be maintained by Mark Otto, Jacob Thornton, and a small group of core developers, 
             as well as a large community of contributors.
           </p>
-          <div class="btsr">
+          <h3 class="text-center">Commonly used Bootstrap elements</h3><br>
+          <div class="bootstrap">
             <div class="col-md-4 more-less-container" id="csr">
               <div class="less-content">
                 <div class="less-head">
@@ -241,6 +238,96 @@
             This style influenced the architecture of other JavaScript frameworks like 
             YUI v3 and Dojo, later stimulating the creation of the standard Selectors API.
           </p>
+          <p> 
+            Microsoft and Nokia bundle jQuery on their platforms. Microsoft includes it with 
+            Visual Studio for use within Microsoft's ASP.NET AJAX and ASP.NET MVC frameworks 
+            while Nokia has integrated it into the Web Run-Time widget development platform.
+          </p>
+          <div class="jquery">
+            <div class="col-md-6 more-less-container" id="jqui">
+              <div class="less-content">
+                <div class="less-head"><a href="#jquery">
+                    <h3>jQuery-UI</h3></a></div>
+                <p class="less">
+                  jQuery is a cross-platform JavaScript library designed to 
+                  simplify the client-side scripting of HTML.
+                </p>
+                <button class="more-btn" id="jqui-more-btn" type="button">More...</button>
+              </div>
+              <div class="more-content">
+                <div class="col-md-4 more less-head">
+                  <h2>Features</h2>
+                </div>
+                <div class="more col-md-9">
+                  <div class="col-md-6">
+                    <h3>Widgets</h3>
+                    <p>All of jQuery UI's widgets are fully themeable using a consolidated, coordinated theme mechanism.</p>
+                    <ul>
+                      <li>Accordion – Accordion containers</li>
+                      <li>Accordion – Accordion containers</li>
+                      <li>Autocomplete – Auto-complete boxes based on what the user types</li>
+                      <li>Button – Enhanced button appearance, turn radio buttons and checkboxes into pushbuttons</li>
+                      <li>Datepicker – Advanced date-picker</li>
+                      <li>Dialog – Show dialog boxes on top of other content, easily and robustly</li>
+                      <li>Menu – Show a Menu</li>
+                      <li>Progressbar – Progress bars, both animated and not</li>
+                      <li>Selectmenu – Duplicates and extends the functionality of a native HTML select element to overcome the limitations of the native control</li>
+                      <li>Slider – Fully customizable sliders</li>
+                      <li>Spinner – Show a Number Spinner</li>
+                      <li>Tabs – Tabbed user interface handling, with both inline and demand-loaded content</li>
+                      <li>Tooltip – Show a Tooltip</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h3>Effects</h3>
+                    <ul>
+                      <li>Color Animation – Animate the transition from one color to another</li>
+                      <li>Toggle Class, Add Class, Remove Class, Switch Class – Animate the transition from one set of styles to another</li>
+                      <li>Effect – A variety of effects (appear, slide-down, explode, fade-in, etc.)</li>
+                      <li>Toggle – Toggle an effect on and off</li>
+                      <li>Hide, Show - Using the effects above</li>
+                    </ul>
+                  </div>
+                </div>
+                <button class="more-btn" id="jqui-less-btn" type="button">Back...</button>
+              </div>
+            </div>
+            <div class="col-md-6 more-less-container" id="jqss">
+              <div class="less-content">
+                <div class="less-head"><a href="#node">
+                    <h4>Smoothscroll</h4></a></div>
+                <p class="less">
+                  Smooth scrooll code enables you to preform smooth page sroll to 
+                  an anchor on the same page. It has some logic built in to identify 
+                  those jump links, and not target other links.
+                </p>
+                <button class="more-btn" id="jqss-more-btn" type="button">More...</button>
+              </div>
+              <div class="more-content">
+                <div class="col-md-3 more less-head">
+                  <h4>Smoothscroll</h4>
+                </div>
+                <div class="more col-md-9">
+                  <pre><code>$(function() {
+   $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+       var target = $(this.hash);
+       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+       if (target.length) {
+           $('html, body').animate({
+           scrollTop: target.offset().top
+           }, 1000);
+           return false;
+       }
+       }
+   });
+ });</code></pre>
+                  <h3><a class="head-link" href="https://css-tricks.com/snippets/jquery/smooth-scrolling/" target="_blank" style="dispaly:block;margin:auto;">Link to original code snippet by Chris Coyier</a></h3>
+                </div>
+                <button class="more-btn" id="jqss-less-btn" type="button">Back...</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -252,21 +339,102 @@
             Node.js is an open-source, cross-platform JavaScript runtime environment for developing 
             a diverse variety of server tools and applications. Although Node.js is not a JavaScript 
             framework, many of its basic modules are written in JavaScript, and developers can write 
-            new modules in JavaScript. The runtime environment interprets JavaScript using Google's V8 JavaScript engine.
-          </p>
-          <p>
+            new modules in JavaScript. The runtime environment interprets JavaScript using Google's V8 JavaScript engine.                    p
             Node.js has an event-driven architecture capable of asynchronous I/O. These design choices 
             aim to optimize throughput and scalability in Web applications with many input/output operations, 
-            as well as for real-time Web applications (e.g., real-time communication programs and browser games).
-          </p>
-          <p>
+            as well as for real-time Web applications (e.g., real-time communication programs and browser games).                    p
             The Node.js distributed development project, governed by the Node.js Foundation, is facilitated 
-            by the Linux Foundation's Collaborative Projects program.
-          </p>
-          <p>
+            by the Linux Foundation's Collaborative Projects program.                    p
             Corporate users of Node.js software include GoDaddy, Groupon, IBM, LinkedIn, Microsoft,
             Netflix, PayPal, Rakuten, SAP, Voxer, Walmart, Yahoo!, and Cisco Systems.
           </p>
+          <p> 
+            Node.js allows the creation of Web servers and networking tools using JavaScript and a 
+            collection of "modules" that handle various core functionality. Modules are provided for 
+            file system I/O, networking (DNS, HTTP, TCP, TLS/SSL, or UDP), binary data (buffers), 
+            cryptography functions, data streams and other core functions. Node.js's modules use an 
+            API designed to reduce the complexity of writing server applications. Node.js applications 
+            can run on Linux, macOS, Microsoft Windows, NonStop, and Unix servers. They can alternatively 
+            be written with CoffeeScript (a JavaScript alternative), Dart or Microsoft TypeScript 
+            (strongly typed forms of JavaScript), or any other language that can compile to JavaScript. 
+            Node.js is primarily used to build network programs such as Web servers. The biggest 
+            difference between Node.js and PHP is that most functions in PHP block until completion 
+            (commands execute only after previous commands have completed), while functions in Node.js 
+            are designed to be non-blocking (commands execute in parallel, and use callbacks to signal 
+            completion or failure)
+          </p><br>
+          <div class="node">
+            <div class="col-md-6 more-less-container" id="npm">
+              <div class="less-content">
+                <div class="less-head"><a href="#jquery">
+                    <h2>npm</h2></a></div>
+                <p class="less">
+                  npm is the package manager for JavaScript and the world’s largest software registry. 
+                  Discover packages of reusable code — and assemble them in powerful new ways. 
+                </p>
+                <button class="more-btn" id="npm-more-btn" type="button">More...</button>
+              </div>
+              <div class="more-content">
+                <div class="col-md-3 more less-head">
+                  <h2>npm</h2>
+                </div>
+                <div class="more col-md-9">
+                  <p> 
+                    NPM is automatically included when Node.js is installed. NPM consists of a command 
+                    line client that interacts with a remote registry. It allows users to consume and 
+                    distribute JavaScript modules that are available on the registry. Packages on the 
+                    registry are in CommonJS format and include a metadata file in JSON format. Over 
+                    280,000 packages are available on the main NPM registry. The registry has no vetting 
+                    process for submission, which means that packages found there can be low quality, 
+                    insecure, or malicious. However, the NPM server administrators are fully capable of 
+                    deleting malicious packages or banning malicious users. 
+                  </p>
+                  <p>
+                    NPM exposes usage statistics 
+                    and number of depending packages to assist developers in picking libraries.Packages 
+                    on NPM are registered on a first-come, first-served basis and do not distinguish among 
+                    authors, meaning that the unpublishing of a package can not only break the projects 
+                    that depend on it, but also pose a security risk. For example, a package named 
+                    "left-pad" that only padded the left side of strings inadvertently caused many builds 
+                    to fail when it was removed.
+                  </p>
+                </div>
+                <button class="more-btn" id="npm-less-btn" type="button">Back...</button>
+              </div>
+            </div>
+            <div class="col-md-6 more-less-container" id="grunt">
+              <div class="less-content">
+                <div class="less-head"><a href="#node">
+                    <h2>grunt</h2></a></div>
+                <p class="less">
+                  Grunt is a JavaScript task runner, a tool used to automatically perform frequently 
+                  used tasks such as minification, compilation, unit testing, linting, etc. It uses 
+                  a command-line interface to run custom tasks defined in a file (known as a Gruntfile)
+                </p>
+                <button class="more-btn" id="grunt-more-btn" type="button">More...</button>
+              </div>
+              <div class="more-content">
+                <div class="col-md-3 more less-head">
+                  <h2>grunt</h2>
+                </div>
+                <div class="more col-md-9">
+                  <p> 
+                    Grunt was originally created by Ben Alman in 2012, as an efficient alternative to 
+                    simply writing and maintaining a suite of JavaScript build process tasks in one huge 
+                    file. It was designed as a task-based command line build tool for JavaScript projects. 
+                    Grunt is primarily used to automate tasks that need to be performed routinely. There are 
+                    thousands of plugins that can be installed and used directly to perform some commonly used 
+                    tasks. One of Grunt's most desirable features is that it is highly customizable i.e it 
+                    allows developers to add, extend and modify custom tasks to fit their personal requirements. 
+                    Each task has a set of configuration options that can be set by the user to meet their specific 
+                    needs. Moreover, Grunt offers the ability to define custom tasks, which can combine multiple 
+                    existing tasks into a single task or add entirely new functionality
+                  </p>
+                </div>
+                <button class="more-btn" id="grunt-less-btn" type="button">Back...</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -282,44 +450,14 @@
               <h3>milosev.stojan@gmail.com</h3>
             </p>
           </div>
-          <form class="form-horizontal col-md-6" role="form" method="post" action="index.php">
-            <div class="form-group">
-              <label class="col-sm-2 control-label" for="name">Name</label>
-              <div class="col-sm-10">
-                <input class="form-control" id="name" type="text" name="name" placeholder="First &amp; Last Name" value="name">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-2 control-label" for="email">Email</label>
-              <div class="col-sm-10">
-                <input class="form-control" id="email" type="email" name="email" placeholder="example@domain.com" value="email">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-2 control-label" for="subject">Subject</label>
-              <div class="col-sm-10">
-                <input class="form-control" id="email" type="subject" name="subject" placeholder="subject" value="subject">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-2 control-label" for="message">Message</label>
-              <div class="col-sm-10">
-                <textarea class="form-control" rows="4" name="message"></textarea>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-sm-10 col-sm-offset-2">
-                <input class="btn btn-primary" id="submit" name="submit" type="submit" value="Send">
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-sm-10 col-sm-offset-2"></div>
-            </div>
-          </form>
         </div>
       </div>
     </div>
-    <footer></footer>
+    <footer>
+      <div class="container container-fluid">
+        <p>by stojan milosev</p>
+      </div>
+    </footer>
     <!--custom javascipt a-->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery-ui.js"></script>
